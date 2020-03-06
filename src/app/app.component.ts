@@ -13,6 +13,7 @@ declare var $: any;
 export class AppComponent implements OnInit {
 
     public tokenOption: TokenOption;
+    public gameStatus = "Iniciando";
     public title = 'Attackers';
 
     constructor(public _dialog: MatDialog) {

@@ -10,12 +10,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { StartDialogModule } from './start-dialog/start-dialog.module';
+import { FinishDialogModule } from './finish-dialog/finish-dialog.module';
 
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
+    FormsModule,
     CommonModule,
     BrowserModule,
     AppRoutingModule,
@@ -23,6 +25,7 @@ import { StartDialogModule } from './start-dialog/start-dialog.module';
 
     MatDialogModule,
     StartDialogModule,
+    FinishDialogModule,
     
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],

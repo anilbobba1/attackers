@@ -1,0 +1,10 @@
+<h1 matDialogTitle>Finish</h1>
+<div mat-dialog-content>
+    <h4>
+        {{finishDialogData?.message}}
+    </h4>
+    <h5>Score: {{finishDialogData?.score}}</h5>
+</div>
+<div mat-dialog-actions class="pt-24">
+    <button mat-raised-button color="primary" class="mr-16" (click)="startNewGame()">New Game</button>
+</div>
