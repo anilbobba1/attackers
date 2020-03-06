@@ -1,0 +1,27 @@
+<h1 matDialogTitle>Game Options</h1>
+<div mat-dialog-content>
+    <mat-radio-group [(ngModel)]="tokenOption.token" [ngModelOptions]="{standalone: true}" class="d-flex mb-10">
+        <label class="mr-10 radio-lbl">Token</label>
+        <div>
+            <mat-radio-button value="X">
+                <img width="40" alt="X space" src="assets/x_space.png" />
+            </mat-radio-button><br>
+            <mat-radio-button value="O">
+                <img width="40" alt="O space" src="assets/o_space.png" />
+            </mat-radio-button>
+        </div>
+    </mat-radio-group>
+
+    <mat-radio-group [(ngModel)]="tokenOption.level" [ngModelOptions]="{standalone: true}" class="d-flex">
+        <label class="mr-10 radio-lbl">Difficulty</label>
+        <div>
+            <mat-radio-button class="mb-10" value="blind">Easy</mat-radio-button><br>
+            <mat-radio-button class="mb-10" value="novice">Novice</mat-radio-button><br>
+            <mat-radio-button class="mb-10" value="master">Master</mat-radio-button>
+        </div>
+    </mat-radio-group>
+</div>
+<div mat-dialog-actions class="pt-24">
+    <button mat-raised-button color="primary" class="mr-16" (click)="insertCoin()">Insert Coin</button>
+    <button mat-raised-button color="warn" (click)="_dialogRef.close(false)">Cancel</button>
+</div>

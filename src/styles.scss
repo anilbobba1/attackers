@@ -1,0 +1,50 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.mat-dialog-container {
+  background: #fff;
+  color: #333;
+  padding: 0 0 !important;
+}
+
+.mat-radio-outer-circle {
+  border-color: #333;
+}
+
+.mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle {
+  border-color: #0f508f;
+}
+
+.mat-radio-button.mat-accent .mat-radio-inner-circle,
+.mat-radio-button.mat-accent .mat-radio-ripple .mat-ripple-element:not(.mat-radio-persistent-ripple),
+.mat-radio-button.mat-accent.mat-radio-checked .mat-radio-persistent-ripple,
+.mat-radio-button.mat-accent:active .mat-radio-persistent-ripple {
+  background-color: #0f508f;
+}
+
+.mat-dialog-title {
+  padding: 10px 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.mat-dialog-content {
+  padding: 10px 20px !important;
+  margin: 0 0px !important;
+}
+
+.mat-dialog-actions {
+  border-top: 1px solid #ccc;
+  padding: 10px 20px !important;
+  margin-bottom: 0 !important;
+  justify-content: flex-end;
+  min-height: inherit !important;
+}
